@@ -1,22 +1,15 @@
 <html>
-    <head>
-        <title>Django Girls blog</title>
-    </head>
-    <body>
+      <head>
         <div>
-            <h1><a href="/">Django Girls Blog</a></h1>
+         <h1><a href="/">Django Girls Blog</a></h1>
         </div>
-
-        <div>
-            <p>published: 15.08.2018, 9.09pm</p>
-            <h2><a href="">My first post</a></h2>
-            <em>So iam learning django and doing html with trial and error took me three hours to find an error and the error was just a space </em>
-        </div>
-
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>;/</p>
-        </div>
-    </body>
+       <head>
+      {% for post in posts %}
+       <div>
+         <p>published: {{ post.published_date }}</p>
+         <h1><a href="">{{ post.title }}</a></h1>
+         <p>{{ post.text|linebreaksbr }}</p>
+      </div>
+{% endfor %}
+     
 </html>
