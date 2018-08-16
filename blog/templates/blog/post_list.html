@@ -1,15 +1,43 @@
+{%  load static %}
 <html>
-      <head>
-        <div>
-         <h1><a href="/">Django Girls Blog</a></h1>
+    <head>
+        <title>Django Girls blog</title>
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <h1><a href="/">Django Girls Blog</a></h1>
         </div>
-       <head>
-      {% for post in posts %}
-       <div>
-         <p>published: {{ post.published_date }}</p>
-         <h1><a href="">{{ post.title }}</a></h1>
-         <p>{{ post.text|linebreaksbr }}</p>
-      </div>
-{% endfor %}
-     
+
+        <div class="content container">
+          <div class="row">
+            <div class="col-md-8"
+              <div class="post">
+                <div class="date">
+                  <p>published: 14.06.2014, 12:14</p>
+                  <h2><a href="">My first post</a></h2>
+                  <p>So finally almst done dont know what to add just need to make the para look big so adding gibbrish. - If God can do anything, can he make a rock so big that he can't move it. "...nonsense remains nonsense even when we talk it about God" - C.S. Lewis Isn't it amazing when otherwise intelligent people become self-contradicting lunatics when we talk religion. Why does that happen. I've got a couple of thoughts. First, often in religion, what I say/believe is tainted by what I want to be true. Now that's not the case in Mathematics. In Math, I'm not tempted to believe 2+2 is 5 because I want it to be 5.... </p>
+                </div>
+              </div>   
+            </div>
+          </div> 
+        </div>
+        
+        <div class="content container">
+          <div class="row:>
+            <div class="cl-md-8"
+              <div class="post">
+               <div class="date">
+                 <p>published: 14.06.2014, 12:14</p>
+                 <h2><a href="">My second post</a></h2>
+                 <p>Discuss the performance and media techniques used in the production and assess their effectiveness throughout A production which used mixed media in a very effective way was by the Forkbeard Fantasy company doing - ‘The Colour of Nonsense’ On 20th November. They used animation, film, sound effect and a variety of different characters to create a very interesting production. The play centered around three artists working in an art company. Forkbeard wrote and devised all the material themselves and took inspiration from the Emperor’s New Clothes and Edward Lear’s limericks and tale of the ‘Dong with the luminous nose’.... </P
+               </div>
+              </div>
+            </div>
+          </div>
+         </div>
+    </body>
 </html>
