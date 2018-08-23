@@ -1,0 +1,32 @@
+ <div class="page-header">
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+
+        <div class="content container">
+          <div class="row">
+            <div class="col-md-8"
+              <div class="post">
+                <div class="date">
+                  <p>published: 14.06.2014, 12:14</p>
+                  <h2><a href="">My first post</a></h2>
+                  <p>So finally almst done dont know what to add just need to make the para look big so adding gibbrish. - If God can do anything, can he make a rock so big that he can't move $
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content container">
+          <div class="row:>
+            <div class="cl-md-8"
+              <div class="post">
+               <div class="date">
+                 <p>published: 14.06.2014, 12:14</p>
+                 <h2><a href="">My second post</a></h2>
+                 <p>Discuss the performance and media techniques used in the production and assess their effectiveness throughout A production which used mixed media in a very effective way wa$
+               </div>
+              </div>
+            </div>
+          </div>
+         </div>
+
